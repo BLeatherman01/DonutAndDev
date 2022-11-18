@@ -1,0 +1,9 @@
+<h1>Famous People</h1>
+
+<ul >
+
+    <li *ngFor="let f of peopleList; index as i">
+        <a [routerLink]="['/famous-person-detail', i]">Name: {{f.firstName}} {{f.lastName}}</a>
+   </li>
+
+</ul>
